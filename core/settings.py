@@ -17,7 +17,7 @@ SECRET_KEY = os.environ.get(
     "django-insecure-mude-isso-em-producao"
 )
 
-DEBUG = os.environ.get("DEBUG", "True") == "True"
+DEBUG = os.environ.get("DJANGO_DEBUG", "False") == "True"
 
 ALLOWED_HOSTS = ["*", ".railway.app"]
 
